@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Corben-Regular
+font link: https://fonts.google.com/specimen/Corben
+font author: Vernon Adams
+font author site: http://sansoxygen.com/
+
+
+icon designer: Tami Nova
+icon designer link: /Tamiv
+        
+
+fontColor: {"gradient-0":"#00ced1","gradient-1":"#3A7A6E"}
+bgColor: {"hex":"#333333"}
+iconColor: {"gradient-0":"#00ced1","gradient-1":"#3A7A6E"}
+
+      

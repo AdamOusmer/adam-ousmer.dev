@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    gap: 2%;
+
+    border-bottom: 25px;
+
+}
+
+#header_image {
+
+    width: 90%;
+    height: clamp(300px, 20vh, 600px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.header_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 5%;
+
+    height: 10vh;
+    width: 100%;
+    gap: 10%;
+
+    border-bottom: 25px;
+}
+
+.header_links a {
+    height: clamp(25px, 10vh, 75px);
+    width: clamp(25px, 10vh, 75px);
+    background-size: cover;
+}
+
+.cv {
+    background: url("../../../assets/images/curriculum-vitae.png") no-repeat;
+}
+
+.github {
+    background: url("../../../assets/images/github.png") no-repeat;
+}
+
+.linkedin {
+    background: url("../../../assets/images/linkedin.png") no-repeat;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 25vh;
+    width: 100%;
+    gap: 10%;
+
+    border-bottom: 25px;
+}
+
