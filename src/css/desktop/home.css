@@ -14,10 +14,8 @@ header {
 
 #header_image {
 
-    width: 90%;
+    width:75%;
     height: clamp(300px, 20vh, 600px);
-    object-fit: cover;
-    object-position: center;
 }
 
 .header_links {
@@ -38,6 +36,11 @@ header {
     height: clamp(25px, 10vh, 75px);
     width: clamp(25px, 10vh, 75px);
     background-size: cover;
+    transition: 500ms ease-in-out;
+}
+
+.header_links a:hover {
+    transform: scale(1.2);
 }
 
 .cv {
@@ -58,12 +61,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    height: 25vh;
+    height: 50vh;
     width: 100%;
     gap: 10%;
-
-    border-bottom: 25px;
 }
 
