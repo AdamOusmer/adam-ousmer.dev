@@ -55,8 +55,6 @@ header {
     background: url("../../../assets/images/linkedin.png") no-repeat;
 }
 
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -66,5 +64,24 @@ main {
     height: 50vh;
     width: 100%;
     gap: 10%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    gap: 10%;
+}
+
+main section .news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10%;
+    height: 100%;
 }
 

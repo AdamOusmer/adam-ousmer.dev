@@ -7,9 +7,38 @@
     background: #151515;
 }
 
+/* Start Remove default behavior */
+
 body {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+/* End Remove default behavior */
+
+footer {
+    height: 10vh;
+    width: 100%;
+
+    margin: 25px 0 10px 0;
 }
 
 h1 {
