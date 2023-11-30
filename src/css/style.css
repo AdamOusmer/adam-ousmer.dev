@@ -34,12 +34,20 @@ input {
 
 /* End Remove default behavior */
 
-footer {
-    height: 10vh;
-    width: 100%;
+/* Start Global style */
 
-    margin: 25px 0 10px 0;
+.button_redirection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: clamp(25px, 15vh, 100px);
+    width: clamp(100px, 10vw, 800px);
+
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
 }
+
 
 h1 {
     font-size: 3rem;
@@ -56,3 +64,64 @@ h2 {
     margin: 0;
     padding: 0;
 }
+
+footer {
+    height: 10vh;
+    width: 100%;
+
+    margin: 25px 0 10px 0;
+}
+
+/* End Global style */
+
+/* Start Consent style */
+
+#consentModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 25vh;
+    width: 50vw;
+
+    background: #f5f5f5;
+
+}
+
+#consentModal h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#consentModal #consentModalButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 25%;
+    width: 100%;
+}
+
+#consentModal button {
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    background: #151515;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* End Consent Style */
