@@ -1,60 +1,71 @@
+/* Header */
 header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
-    width: 100vw;
-    gap: 2%;
-
-    border-bottom: 25px;
-
+    height: 90vh;
+    width: 90%;
+    padding: 5vh 5%;
+    gap: 10%;
 }
 
-#header_image {
-
-    width:75%;
-    height: clamp(300px, 20vh, 600px);
-}
-
-.header_links {
+header .image {
     display: flex;
-    flex-direction: row;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+}
+
+header .image img {
+    height: auto;
+    width: clamp(200px, 70%, 500px);
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    margin-top: 5%;
+    padding: 0 5%;
 
-    height: 10vh;
+    height: 100%;
+}
+
+header .content span.highlight {
+    color: var(--light-sea-green);
+    font-weight: 600;
+}
+
+header .content .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: clamp(1rem, 10vh, 4rem);
     width: 100%;
-    gap: 10%;
-
-    border-bottom: 25px;
+    gap: 20%;
 }
 
-.header_links a {
-    height: clamp(25px, 10vh, 75px);
-    width: clamp(25px, 10vh, 75px);
-    background-size: cover;
-    transition: 500ms ease-in-out;
+header .content .buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: clamp(20px, 10vh, 60px);
+    width: clamp(125px, 15vw, 800px);
+    font-size: clamp(20px, 10%, 25px);
+
+    background: var(--light-sea-green);
+    border-radius: 15px;
 }
 
-.header_links a:hover {
-    transform: scale(1.2);
-}
+/* End Header */
 
-.cv {
-    background: url("../../../assets/images/curriculum-vitae.png") no-repeat;
-}
-
-.github {
-    background: url("../../../assets/images/github.png") no-repeat;
-}
-
-.linkedin {
-    background: url("../../../assets/images/linkedin.png") no-repeat;
-}
-
+/* Main */
 main {
     display: flex;
     flex-direction: column;

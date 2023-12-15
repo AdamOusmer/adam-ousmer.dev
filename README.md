@@ -7,4 +7,3 @@ This is the source code for my official website. This website is build using pur
 
 > All rights reserved <br/>
 > &copy; 2023 Adam Ousmer
-
