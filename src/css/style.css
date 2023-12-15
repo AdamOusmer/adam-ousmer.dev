@@ -1,17 +1,33 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Rosarivo:ital@0;1&display=swap');
+/* End Fonts */
+
+/* Variables */
+:root {
+    --baby-powder: #FDFFFC;
+    --rich-black: #1d1d1d;
+    --delft-blue: #38405F;
+    --light-sea-green: #2EC4B6;
+    --red-pantone: #E71D36;
+}
+/* End Variables */
 
 * {
     font-family: 'Rosarivo', cursive;
     letter-spacing: 5px;
-    color: #f5f5f5;
-    background: #151515;
+    color: var(--baby-powder);
 }
-
 /* Start Remove default behavior */
 
 body {
     margin: 0;
     padding: 0;
+    background: var(--rich-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px, 10vh, 70px);
 }
 
 a {
@@ -48,11 +64,17 @@ input {
     border-radius: 15px;
 }
 
+header {
+    height: 90vh;
+    width: 90%;
+    padding: 5vh 5%;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--rich-black) 200px ), repeating-linear-gradient( #38405F55, var(--delft-blue) );
+}
+
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -60,7 +82,13 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 300;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }

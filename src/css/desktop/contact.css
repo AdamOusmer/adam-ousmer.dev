@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5vh;
+
+    width: 100%;
+}
+
+.contactInformations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5vh 0;
+}
+
+.contactInformations a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background: var(--light-sea-green);
+    border-radius: 10px;
+
+    height: clamp(20px, 5vw, 40px);
+    width: clamp(20px, 5vw, 40px);
+
+    overflow-x: hidden;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    margin: 1vh 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.contactInformations a::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    height: 80%;
+    width: clamp(100px, 15vw, 900px);
+
+    left: 100%;
+    background: var(--red-pantone);
+    border-radius: 0 10px 10px 0;
+
+    padding: 0 1rem;
+
+    margin-right: 1rem;
+}
+
+.contactInformations a.phone::before {
+    content: "+1 (514) 893\00B7 4248";
+}
+
+.contactInformations a.mail::before {
+    content: "contact@adam-ousmer.dev";
+}
+
+.contactInformations a:hover {
+    overflow-x: visible;
+}
+
+.contactInformations a img {
+    height: auto;
+    width: clamp(20px, 100%, 30px);
+}
