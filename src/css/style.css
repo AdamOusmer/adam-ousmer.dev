@@ -151,13 +151,6 @@ footer {
     opacity: 0;
 }
 
-#menu:hover span:nth-child(2) {
-    margin: 13px 0;
-}
-
-#menu.active:hover span:nth-child(2) {
-    margin: -13px 0;
-}
 /* End Menu */
 
 /* Start Navigation */
@@ -174,9 +167,9 @@ nav {
     top: 0;
     left: -100vw;
 
-    height: 90vh;
+    height: 85vh;
     width: 20vw;
-    padding: 5vh 5vw;
+    padding: 10vh 5vw 5vh 5vw;
 
     /* From https://css.glass */
     background: rgba(29, 29, 29, 0.9);
@@ -194,6 +187,21 @@ nav.active {
     border-radius: 0;
 }
 
+nav .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 110%;
+
+    border-bottom: var(--baby-powder) 1px solid;
+}
+
+nav .header pre {
+    text-align: left;
+    font-size: 1rem;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -204,7 +212,7 @@ nav ul {
     width: 90%;
     padding: 5% 0;
 
-    gap: 10%;
+    gap: 20%;
 }
 
 nav ul li {
@@ -240,16 +248,48 @@ nav.active ul.links li {
 }
 
 nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-
+    position: relative;
+    display: inline-block;
+    text-align: center;
 
     height: 100%;
     width: 100%;
 
-    color: var(--baby-powder);
+    background-image: linear-gradient(
+            to right,
+            var(--light-sea-green),
+            var(--light-sea-green) 50%,
+            var(--baby-powder) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: all 400ms ease-in-out;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    display: block;
+
+    height: 1px;
+    width: 0;
+
+    bottom: 15%;
+    left: 0;
+
+    background: var(--light-sea-green);
+    transition: all 400ms ease-in-out;
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-position: 0;
 }
 
 nav .social-medias {
@@ -292,12 +332,22 @@ nav .social-medias ul li a {
     justify-content: center;
     align-items: center;
 
+    text-align: center;
+
     height: 100%;
     width: 100%;
 
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 
     color: var(--baby-powder);
+}
+
+nav .social-medias ul li a:before {
+    bottom: 30%;
+}
+
+nav ul li:hover a{
+    background-position: 0;
 }
 
 /* End Navigation */
