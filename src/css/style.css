@@ -13,7 +13,7 @@
 /* End Variables */
 
 * {
-    font-family: 'Rosarivo', cursive;
+    font-family: 'Rosarivo', serif;
     letter-spacing: 5px;
     color: var(--baby-powder);
 }
@@ -68,7 +68,7 @@ header {
     height: 90vh;
     width: 90%;
     padding: 5vh 5%;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--rich-black) 200px ), repeating-linear-gradient( #38405F55, var(--delft-blue) );
+    background-image:  radial-gradient(circle, rgba(62,66,87,1) 0%, rgba(0,0,0,1) 97%);
 }
 
 
@@ -379,6 +379,73 @@ nav ul li:hover a{
 
 /* End Navigation */
 
-/* Start Keyframes */
+/* Start Loading Screen */
 
-/* End Keyframes */
+#loader {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+
+    justify-content: center;
+    align-items: center;
+
+
+    background: radial-gradient(circle, rgba(62,66,87,1) 0%, rgba(0,0,0,1) 97%);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    height: 100vh;
+
+    transition: all 700ms ease-in-out;
+}
+
+#loader.hide {
+    opacity: 0;
+}
+
+#loader .spiral_container {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spiral {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.spiral {
+    position: absolute;
+
+    display: flex;
+}
+
+.spiral-char {
+    font-size: 1.5rem;
+    padding: 2px;
+    transform: translateY(calc(sin(var(--angle)) * 100px)) scale(calc(cos(var(--angle)) * -0.5 + 0.55));
+    animation: spiral 4000ms steps(360) infinite;
+}
+
+
+/* End Loading Screen */
