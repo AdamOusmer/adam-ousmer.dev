@@ -60,27 +60,6 @@ header .content .buttons {
     gap: 20%;
 }
 
-header .content .buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: clamp(20px, 10vh, 60px);
-    width: clamp(125px, 15vw, 800px);
-    font-size: clamp(20px, 10%, 25px);
-
-    background: var(--delft-blue);
-    box-shadow: 0 10px 10px 0 var(--rich-black);
-
-    border-radius: 15px;
-
-    transition: all 400ms ease-in-out;
-}
-
-header .content .buttons a:hover {
-    background: var(--light-sea-green);
-    color: var(--rich-black);
-}
 
 header .container {
     position: absolute;

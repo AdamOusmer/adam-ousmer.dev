@@ -100,6 +100,55 @@ footer {
     margin: 25px 0 10px 0;
 }
 
+
+.button {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--rich-black);
+
+    padding: clamp(10px, 5vh, 20px) clamp(20px, 10vw, 40px);
+
+    border-radius: 45px;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    display: block;
+
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);
+
+    background: linear-gradient(
+            to right,
+            var(--rich-black),
+            var(--rich-black) 80%,
+            var(--baby-powder) 99%
+    );
+    border-radius: inherit;
+
+
+    z-index: -1;
+
+    transition: all 400ms ease-in-out;
+    animation: rotate-border 2s linear infinite;
+}
+
+@keyframes rotate-border {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
 /* End Global style */
 
 /* Start Menu */
