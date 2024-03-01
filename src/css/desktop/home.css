@@ -1,12 +1,13 @@
 /* Header */
 header {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 90vh;
     width: 90%;
-    padding: 5vh 5%;
     gap: 10%;
 }
 
@@ -40,6 +41,10 @@ header .content {
     height: 100%;
 }
 
+header .shadow {
+    text-shadow: var(--rich-black) 0 0 2px;
+}
+
 header .content span.highlight {
     color: var(--light-sea-green);
     font-weight: 600;
@@ -55,27 +60,37 @@ header .content .buttons {
     gap: 20%;
 }
 
-header .content .buttons a {
+
+header .container {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    height: clamp(20px, 10vh, 60px);
-    width: clamp(125px, 15vw, 800px);
-    font-size: clamp(20px, 10%, 25px);
+    padding: 5% 5%;
 
-    background: var(--delft-blue);
-    box-shadow: 0 10px 10px 0 var(--rich-black);
+    width: 90%;
+    height: 90%;
 
-    border-radius: 15px;
+    z-index: 1;
 
-    transition: all 400ms ease-in-out;
 }
 
-header .content .buttons a:hover {
-    background: var(--light-sea-green);
-    color: var(--rich-black);
+header #background-Header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 0;
 }
+
 
 /* End Header */
 
