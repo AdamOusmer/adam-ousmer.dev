@@ -1,12 +1,13 @@
 /* Header */
 header {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 90vh;
     width: 90%;
-    padding: 5vh 5%;
     gap: 10%;
 }
 
@@ -38,6 +39,10 @@ header .content {
     padding: 0 5%;
 
     height: 100%;
+}
+
+header .shadow {
+    text-shadow: var(--rich-black) 0 0 2px;
 }
 
 header .content span.highlight {
@@ -76,6 +81,37 @@ header .content .buttons a:hover {
     background: var(--light-sea-green);
     color: var(--rich-black);
 }
+
+header .container {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    padding: 5% 5%;
+
+    width: 90%;
+    height: 90%;
+
+    z-index: 1;
+
+}
+
+header #background-Header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 0;
+}
+
 
 /* End Header */
 

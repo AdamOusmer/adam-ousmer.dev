@@ -444,7 +444,7 @@ nav ul li:hover a{
     font-size: 1.5rem;
     padding: 2px;
     transform: translateY(calc(sin(var(--angle)) * 100px)) scale(calc(cos(var(--angle)) * -0.5 + 0.55));
-    animation: spiral 4000ms steps(360) infinite;
+    animation: spiral 4000ms steps(720) infinite;
 }
 
 
