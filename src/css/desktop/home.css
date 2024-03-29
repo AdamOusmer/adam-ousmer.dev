@@ -23,12 +23,8 @@ header .image {
 
 header .image img {
     height: auto;
-    width: clamp(200px, 70%, 500px);
+    width: clamp(200px, 70%, 300px);
     transition: all 400ms ease-in-out;
-}
-
-header .image img:hover {
-    transform: scale(1.1);
 }
 
 header .content {
