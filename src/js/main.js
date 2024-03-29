@@ -51,7 +51,14 @@ const characters = word.split("").forEach((char, i) => {
     document.getElementById("spiral1").append(createElement(-1 * (animationDuration/2)));
 });
 
-
-
-
 // End Animation Loading Screen
+
+// Copyright Footer
+
+const year = new Date().getFullYear();
+
+const copy_container = document.querySelector('#copyright');
+
+copy_container.innerHTML = `Adam Ousmer &copy; ${year}`;
+
+

@@ -23,12 +23,13 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/desktop/home.css">
 
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.87/build/spline-viewer.js"></script>
 </head>
 
 <body>
 
     <div id="loader">
-        <h1>Adam</h1>
+        <h1>Adam Ousmer</h1>
         <div class="spiral_container">
             <div id="spiral" class="spiral"></div>
             <div id="spiral1" class="spiral"></div>
@@ -76,7 +77,7 @@
             <div class="content">
                 <div class="I-am shadow">
                     <pre>Hello, I am</pre>
-                    <h1><span class="highlight">Adam</span></h1>
+                    <h1><span class="highlight">Adam Ousmer</span></h1>
                 </div>
                 <h3 class="shadow"><span class="highlight">Software Engineering</span> Student</h3>
                 <pre>Website Under Development</pre>
@@ -90,8 +91,7 @@
             <div class="image"><img src="assets/images/memoji.png" alt="" draggable="false"></div>
         </div>
 
-        <iframe id="background-Header" src='https://my.spline.design/3dpathslines1copy-2b47fe0260aa039747dc73ea8a9e9564/' frameborder='0'
-                ></iframe>
+        <spline-viewer id='background-Header' url="https://prod.spline.design/NkZcyNtMgGVM7pWA/scene.splinecode"></spline-viewer>
     </header>
 
     <main>
@@ -110,7 +110,7 @@
     </main>
 
     <footer>
-        <pre>Adam Ousmer &copy; 2023</pre>
+        <pre id="copyright"></pre>
     </footer>
 
     <!-- JS -->
